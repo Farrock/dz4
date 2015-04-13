@@ -2,8 +2,9 @@
 loftschool dz4
 
 Как установить?
-
-git clone https://github.com/Farrock/dz4/
-npm i
-bower i
-gulp
+<ol>
+<li>git clone https://github.com/Farrock/dz4/</li> 
+<li>npm i</li>
+<li>bower i</li>
+<li>gulp</li>
+</ol>
