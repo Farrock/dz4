@@ -1,16 +1,85 @@
-$blue: #3bbfce;
-$margin: 16px;
+// vars
+$main_col_w: 690px;
 
-body{color: green; background: linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); }
+$header_footer_bg_color: #eff3f7;
 
-.fff{
-  padding: $margin / 2;
-  margin: $margin / 2;
-  border-color: $blue;
+// mixin
+@mixin clear_mp() {
+  margin: 0;
+  padding: 0;
 }
-.borderd333d3easdf3 {
-  padding: $margin / 2;
-  margin: $margin / 2;
-  border-color: $blue;
-  border-radius: 2px;
+
+@mixin clear_list() {
+  @include clear_mp();
+  list-style-type: none;
+
+}
+
+@mixin clear_list_item(){
+  @include clear_mp();
+  list-style-type: none;
+  display: inline-block;
+}
+
+// helpers
+
+//
+
+body {
+  @include clear_mp;
+  background: url('../img/bg.jpg') center;
+}
+
+.header {
+  background: $header_footer_bg_color;
+}
+
+.header-in {
+  width: 1200px;
+  margin: auto;
+  .logo {
+    display: inline-block;
+    width: 240px;
+    height: 40px;
+  }
+}
+
+.social-links {
+  @include clear_list;
+  float: right;
+  li{
+    @include clear_list_item;
+  }
+}
+
+.social-links .soc-ico {
+}
+
+.social-links .soc-ico .vk {
+}
+
+.social-links .soc-ico .gh {
+}
+
+.social-links .soc-ico .fb {
+}
+
+.social-links .soc-ico .tw {
+}
+
+.footer {
+  background: $header_footer_bg_color;
+}
+
+.footer-in {
+}
+
+.main {
+  width: $main_col_w;
+}
+
+.main-left-col {
+}
+
+.main-right-col {
 }

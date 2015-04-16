@@ -15,6 +15,7 @@ gulp.task('default', ['connect', 'html', 'css', 'watch']);
 gulp.task('sass', function () {
     gulp.src('app/sass/*.scss')
         .pipe(sass())
+        .pipe(minifyCSS({keepBreaks: true, advanced: false}))
         .pipe(autoprefixer("last 10 versions"))
         .pipe(gulp.dest('app/css'))
         .pipe(connect.reload());

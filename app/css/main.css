@@ -1,15 +1,8 @@
-body {
-  color: green;
-  background: -webkit-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
-  background: linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); }
-
-.fff {
-  padding: 8px;
-  margin: 8px;
-  border-color: #3bbfce; }
-
-.borderd333d3easdf3 {
-  padding: 8px;
-  margin: 8px;
-  border-color: #3bbfce;
-  border-radius: 2px; }
+body{margin:0;padding:0;background:url(../img/bg.jpg)center}
+.header{background:#eff3f7}
+.header-in{width:1200px;margin:auto}
+.header-in .logo{display:inline-block;width:240px;height:40px}
+.social-links{margin:0;padding:0;list-style-type:none;float:right}
+.social-links li{margin:0;padding:0;list-style-type:none;display:inline-block}
+.footer{background:#eff3f7}
+.main{width:690px}
