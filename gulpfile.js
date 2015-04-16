@@ -6,10 +6,33 @@ var autoprefixer    = require('gulp-autoprefixer');
 var livereload      = require('gulp-livereload');
 var connect         = require('gulp-connect');
 var opn             = require('opn');
+var wiredep         = require('wiredep').stream;
+var sass            = require('gulp-sass');
+
 
 gulp.task('default', ['connect', 'html', 'css', 'watch']);
 
+gulp.task('sass', function () {
+    gulp.src('app/sass/*.scss')
+        .pipe(sass())
+        .pipe(autoprefixer("last 10 versions"))
+        .pipe(gulp.dest('app/css'))
+        .pipe(connect.reload());
+});
+
 gulp.task('css', function () {
+    return gulp.src('app/css/*.css')
+        //.pipe(sass())
+        //.pipe(concatCSS("bandle.css"))
+        .pipe(autoprefixer("last 5 versions"))
+        //.pipe(minifyCSS(""))
+        .pipe(rename("main.compiled.css"))
+        .pipe(gulp.dest("app/css/dist/"))
+        .pipe(connect.reload());
+    ;
+});
+
+gulp.task('css_clear', function () {
     return gulp.src('app/css/*.css')
         .pipe(concatCSS("bandle.css"))
         .pipe(autoprefixer())
@@ -17,14 +40,23 @@ gulp.task('css', function () {
         .pipe(rename("main.min.css"))
         .pipe(gulp.dest("app/css/dist/"))
         .pipe(connect.reload());
-        ;
+    ;
+});
+
+gulp.task('bower', function () {
+    gulp.src('./app/index.html')
+        .pipe(wiredep({
+            directory: "app/bower/"
+        }))
+        .pipe(gulp.dest('./app'));
 });
 
 
-
 gulp.task('watch', function() {
-    gulp.watch('app/css/*.css', ['css']);
+    gulp.watch('app/sass/*.scss', ['sass']);
+    //gulp.watch('app/css/*.css', ['css']);
     gulp.watch('app/*.html', ['html']);
+    gulp.watch('bower.json', ['bower']);
 });
 
 gulp.task('html', function() {
