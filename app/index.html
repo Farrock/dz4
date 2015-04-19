@@ -10,9 +10,13 @@
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
 	<!-- endbower -->
 
-	<link rel="stylesheet" href="css/dist/main.compiled.css"/>
-	<link rel="stylesheet" href="css/main.css"/>
+	<!-- fonts -->
+	<link rel="stylesheet" href="fonts/fira/fira.css"/>
+	<link rel="stylesheet" href="fonts/Proxima-Nova/proxima-nova.css"/>
+	<!-- endfonts -->
 
+	<link rel="stylesheet" href="css/sprite.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
 
 	<!-- bower:js -->
 	<script src="bower/jquery/dist/jquery.js"></script>
@@ -24,47 +28,51 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header-in">
-				<div class="logo">
-					<a href="/"><img src="img/logo.png" alt="logo"></a>
-				</div>
+				<a href="/" class="logo"></a>
 				<ul class="social-links">
-					<li><a class="soc-ico vk" rel="nofollow" target="_blank" href="http://vk.com">vk.com</a></li>
-					<li><a class="soc-ico tw" rel="nofollow" target="_blank" href="http://twitter.com">twitter.com</a></li>
-					<li><a class="soc-ico fb" rel="nofollow" target="_blank" href="http://facebook.com">facebook.com</a></li>
-					<li><a class="soc-ico gh" rel="nofollow" target="_blank" href="http://github.com">github.com</a></li>
+					<li><a class="soc-ico ico-vk" rel="nofollow" target="_blank" href="http://vk.com">vk.com</a></li>
+					<li><a class="soc-ico ico-tw" rel="nofollow" target="_blank" href="http://twitter.com">twitter.com</a></li>
+					<li><a class="soc-ico ico-fb" rel="nofollow" target="_blank" href="http://facebook.com">facebook.com</a></li>
+					<li><a class="soc-ico ico-gh" rel="nofollow" target="_blank" href="http://github.com">github.com</a></li>
 				</ul>
 			</div>
 		</header>
 
-		<div class="main">
+		<div class="container main-container">
 			<div class="left-col">
-				<ul class="left-menu">
-					<li><a href="">Обо мне</a></li>
-					<li><a href="">Мои работы</a></li>
-					<li><a href="">Связаться со смной</a></li>
+				<ul class="left-col-menu">
+					<li class="left-col-menu-item active"><a href="">Обо мне</a></li>
+					<li class="left-col-menu-item "><a href="">Мои работы</a></li>
+					<li class="left-col-menu-item "><a href="">Связаться со смной</a></li>
 				</ul>
 
-				<ul class="contacts">
-					<li><a href="mailto:webFarrock@mail.ru">webFarrock@mail.ru</a></li>
-					<li><a href="tel:+79035032551">+79035032551</a></li>
-					<li><a href="skype:webFarrock">webFarrock</a></li>
-				</ul>
+				<div class="contacts-wp">
+					<div class="contacts-h">Контакты</div>
+					<ul class="contacts">
+						<li class="contacts-item mail"><a href="mailto:webFarrock@mail.ru">webFarrock@mail.ru</a></li>
+						<li class="contacts-item phone"><a href="tel:+79035032551">+79035032551</a></li>
+						<li class="contacts-item skype"><a href="skype:webFarrock">webFarrock</a></li>
+					</ul>
+				</div>
 				
 			</div>
 			<div class="right-col">
 				<div class="content">
 					<div class="content-block">
 						<div class="content-block-header">Основная информация</div>
-						<div class="content-block-text">
-							<div class="user-photo">
-								<img src="img/avatar.png" alt="avatar.png"/>
+						<div class="content-block-text user-common-info">
+							<div class="user-photo-wp">
+								<div class="user-photo">
+									<img src="img/myavatar.jpg" alt="avatar"/>
+								</div>
 							</div>
 							<ul class="user-data">
-								<li><span class="key">Меня зовут</span><span class="val">Павел Щеглов</span></li>
-								<li><span class="key">Мой возраст</span><span class="val">30 лет</span></li>
-								<li><span class="key">Мой город</span><span class="val">Москва</span></li>
-								<li><span class="key">Ключевые навыки</span>
-									<span class="val">
+								<li><span class="key">Меня зовут:</span><span class="val">Иванов Андрей Степанович</span></li>
+								<li><span class="key">Мой возраст:</span><span class="val">35 лет</span></li>
+								<li><span class="key">Мой город:</span><span class="val">Санкт-Петербург, Россия</span></li>
+								<li><span class="key">Моя специализация:</span><span class="val">FRONTEND разработчик</span></li>
+								<li><span class="key">Ключевые навыки:</span>
+									<span class="val skills-wp">
 										<ul class="skills">
 											<li>html</li>
 											<li>css</li>
@@ -80,31 +88,48 @@
 					<div class="content-block">
 						<div class="content-block-header">Опыт работы</div>
 						<div class="content-block-text">
-							<ul class="works">
-								<li><i class="works-ico ico-work-one"></i>Работа 1</li>
-								<li><i class="works-ico ico-work-two"></i>Работа 2</li>
-								<li><i class="works-ico ico-work-three"></i>Работа 3</li>
-							</ul>
+							<div class="works-info">
+								<ul class="works">
+									<li>
+										<div class="where">"ИП Боровицкий" - Продавец дисков</div>
+										<div class="period">Сентябрь 2005 - Август 2008</div>
+									</li>
+									<li>
+										<div class="where">"ООО Системы безопастности" - Системный администратор</div>
+										<div class="period">Июнь 2008 - Июль 2010</div>
+									</li>
+
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div class="content-block">
 						<div class="content-block-header">Образование</div>
 						<div class="content-block-text">
-							<ul class="education">
-								<li><i class="education-ico ico-institut"></i>Образование 1</li>
-								<li><i class="education-ico ico-course"></i>Образование 2</li>
-							</ul>
+							<div class="learn-info">
+								<ul class="learn">
+									<li class="hat">
+										<div class="where">Незаконченное высшее. СПБГУ ИТМО</div>
+										<div class="period">Октябрь 2012 - по настоящее время</div>
+									</li>
+									<li class="course">
+										<div class="where">Курсы Loftschool.ru</div>
+										<div class="period">Ноябрь 2014 - по настоящее время</div>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
-		<footer class="footer">
-			<div class="lock"></div>
-			<div class="copyright">© 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
-		</footer>
 	</div>
+
+	<footer class="footer">
+		<div class="footer-in">
+			<span class="lock"></span><span class="copyright"> © 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
+		</div>
+	</footer>
+
 </body>
 </html>
