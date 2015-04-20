@@ -2,9 +2,11 @@
 
 .myworks-list {
   margin: 10px 20px;
+  min-height: 100%;
 }
 
 .myworks-item {
+  position: relative;
   float: left;
   width: 183px;
   margin-bottom: 40px;
@@ -32,6 +34,54 @@
     color: #4a545d;
     text-align: center;
   }
+  &.add-project{
+    .myworks-item-img {
+      border-style: dashed;
+      border-width: 1px;
+      width: 180px;
+      height: 127px;
+      background: url('../img/new-site-ico.png') center 33px no-repeat rgba(236, 251, 255, 0.639);
+      font: 13px 'fira_sanslight';
+      color: #3ba8c0;
+      &:hover{cursor: pointer;}
+      span {
+        position: relative;
+        left: 40px;
+        top: 75px;
+      }
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    display: none;
+    width: 179px;
+    height: 125px;
+    top: 2px;
+    left: 2px;
+    background-color: rgba(1, 108, 164, 0.749);
+    z-index: 100;
+    cursor: pointer;
+    text-align: center;
+    .title {
+      border-width: 2.5px;
+      border-color: rgb(239, 243, 247);
+      border-style: solid;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 55px;
+      padding: 0 3px;
+      font: 12px 'fira_sansbook';
+      color: #eff3f7;
+    }
+  }
+
+  &.hovered, &:hover {
+    .overlay {
+      display: block;
+    }
+  }
+
 }
 
 .myworks-item:nth-child(3n+3) {

@@ -1,7 +1,13 @@
-.myworks-list{margin:10px 20px}
-.myworks-item{float:left;width:183px;margin-bottom:40px;margin-right:30px}
+.myworks-list{margin:10px 20px;min-height:100%}
+.myworks-item{position:relative;float:left;width:183px;margin-bottom:40px;margin-right:30px}
 .myworks-item .myworks-item-img{height:125px;overflow:hidden;border:2px solid #3ba8c0;border-radius:4px;margin-bottom:7px}
 .myworks-item .myworks-item-name{text-align:center;padding-bottom:6px}
 .myworks-item .myworks-item-name a{text-decoration:none;font:13px fira_sanslight_italic;color:#3ba8c0}
 .myworks-item .myworks-item-descr{padding:0 4px;font:15px fira_sanslight;line-height:20px;color:#4a545d;text-align:center}
+.myworks-item.add-project .myworks-item-img{border-style:dashed;border-width:1px;width:180px;height:127px;background:url(../img/new-site-ico.png)center 33px no-repeat rgba(236,251,255,.639);font:13px fira_sanslight;color:#3ba8c0}
+.myworks-item.add-project .myworks-item-img:hover{cursor:pointer}
+.myworks-item.add-project .myworks-item-img span{position:relative;left:40px;top:75px}
+.myworks-item .overlay{position:absolute;display:none;width:179px;height:125px;top:2px;left:2px;background-color:rgba(1,108,164,.749);z-index:100;cursor:pointer;text-align:center}
+.myworks-item .overlay .title{border-width:2.5px;border-color:#eff3f7;border-style:solid;border-radius:6px;display:inline-block;margin-top:55px;padding:0 3px;font:12px fira_sansbook;color:#eff3f7}
+.myworks-item.hovered .overlay,.myworks-item:hover .overlay{display:block}
 .myworks-item:nth-child(3n+3){margin-right:0}
