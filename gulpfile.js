@@ -45,7 +45,7 @@ gulp.task('css_clear', function () {
 });
 
 gulp.task('bower', function () {
-    gulp.src('./app/index.html')
+    gulp.src('./app/*.html')
         .pipe(wiredep({
             directory: "app/bower/"
         }))

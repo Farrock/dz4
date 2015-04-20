@@ -1,41 +1,4 @@
-// vars
-$main_col_w: 690px;
-$header_footer_bg_color: #eff3f7;
-$left_menu_item_bg: #eff3f7;
-$left_menu_item_bg_active: #3ba8c0;
-
-$left_contacts_h_color: #3ba8c0;
-$left_contacts_mail: #41b9d4;
-$left_contacts_phone: #48cbe8;
-$left_contacts_skype: #51daf8;
-
-$footer_height: 80px;
-$max_width: 1200px;
-$min_width: 960px;
-
-// mixin
-@mixin clear_mp() {
-  margin: 0;
-  padding: 0;
-}
-
-@mixin clear_list($display-item) {
-  @include clear_mp();
-  li {
-    @include clear_list_item($display-item);
-  }
-  list-style-type: none;
-}
-
-@mixin left_menu_font() {
-  font: 21px 'fira_sansbook';
-}
-
-@mixin clear_list_item($display) {
-  @include clear_mp();
-  list-style-type: none;
-  display: $display;
-}
+@import 'includes';
 
 .wrapper {
   position: relative;
@@ -177,7 +140,7 @@ body {
     margin: 0 -10px;
   }
   a:hover{
-    font: 21px 'fira_sansbook';
+    /*font: 21px 'fira_sansbook';*/
     color: #3ba8c0;
   }
 }
@@ -283,129 +246,5 @@ body {
 .content-block-header-text {
   font: 17px 'fira_sansmedium' ;
   color: #5a636b;
-}
-
-.user-common-info {
-
-  .user-photo-wp {
-    float: left;
-    margin: 22px 24px 0 55px;
-  }
-  .user-photo {
-    width: 142px;
-    height: 142px;
-    border-radius: 50% 50%;
-    overflow: hidden;
-    border: 4px solid #3ba8c0;
-    background-color: white;
-  }
-  .user-photo img {
-    position: relative;
-    top: 27px;
-    width: 100%;
-  }
-
-  .user-data {
-    @include clear_list(block);
-
-    li {
-      margin-bottom: 6px;
-    }
-    .key {
-      font: 17px 'fira_sansmedium' ;
-      padding-right: 18px;
-      color: #5a636b;
-      display: table-cell;
-      vertical-align: top;
-    }
-    .val {
-      padding-top:2px;
-      display: table-cell;
-      vertical-align: top;
-      font: 15px 'fira_sansbook';
-      color: #37424d
-    }
-
-    .skills-wp{
-      width: 224px;
-      padding-bottom: 20px;
-    }
-
-    .skills{
-      font-size:0;
-      @include clear_list(inline-block);
-      li{
-
-        font: 14px 'proxima_nova_condensed_semibold';
-        color: white;
-        padding: 2px 14px;
-        display: inline-block;
-        margin: 8px 8px 0px 0;
-        border-radius: 2px;
-        background-image: -moz-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
-        background-image: -webkit-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
-        background-image: -ms-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
-
-
-      }
-
-    }
-  }
-}
-
-.content-block-text{
-  .works-info{
-    padding-top: 4px;
-    padding-left: 58px;
-  }
-  .works{
-    @include clear_list(list-item);
-    color: #4a545d;
-    li{
-      min-height: 34px;
-      padding-left: 66px;
-      margin-bottom: 18px;
-      background: url('../img/ico-bag.png') left top no-repeat;
-    }
-
-    .where{
-      font: 17px 'fira_sansbook';
-      line-height: 18px;
-    }
-    .period{
-      font: 15px 'fira_sanslight';
-    }
-  }
-
-
-  .learn-info{
-    padding-left: 56px;
-  }
-  .learn{
-    @include clear_list(list-item);
-    color: #4a545d;
-    li{
-      min-height: 34px;
-      padding-left: 68px;
-      margin-bottom: 15px;
-    }
-
-    .hat{
-      background: url('../img/ico-hat.png') 0px 10px no-repeat;
-    }
-
-    .course{
-      background: url('../img/ico-course.png') 6px 2px no-repeat;
-    }
-    .where{
-      font: 17px 'fira_sansbook';
-      margin-bottom: -4px;
-
-    }
-    .period{
-      font: 15px 'fira_sanslight';
-    }
-  }
-
 }
 

@@ -1,0 +1,38 @@
+// vars
+$main_col_w: 690px;
+$header_footer_bg_color: #eff3f7;
+$left_menu_item_bg: #eff3f7;
+$left_menu_item_bg_active: #3ba8c0;
+
+$left_contacts_h_color: #3ba8c0;
+$left_contacts_mail: #41b9d4;
+$left_contacts_phone: #48cbe8;
+$left_contacts_skype: #51daf8;
+
+$footer_height: 80px;
+$max_width: 1200px;
+$min_width: 960px;
+
+// mixin
+@mixin clear_mp() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin clear_list($display-item) {
+  @include clear_mp();
+  li {
+    @include clear_list_item($display-item);
+  }
+  list-style-type: none;
+}
+
+@mixin left_menu_font() {
+  font: 21px 'fira_sansbook';
+}
+
+@mixin clear_list_item($display) {
+  @include clear_mp();
+  list-style-type: none;
+  display: $display;
+}
