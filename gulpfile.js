@@ -8,7 +8,7 @@ var connect         = require('gulp-connect');
 var opn             = require('opn');
 var wiredep         = require('wiredep').stream;
 var sass            = require('gulp-sass');
-
+var sprite          = require('gulp-sprite-generator');
 
 gulp.task('default', ['connect', 'html', 'css', 'watch']);
 
@@ -79,5 +79,21 @@ gulp.task('connect', function() {
         livereload: true,
         port:8888
     });
-    opn('http://localhost:8888/auth.html')
+    opn('http://localhost:8888/')
 });
+
+/*
+gulp.task('sprites', function() {
+    var spriteOutput;
+
+    spriteOutput = gulp.src("./src/css/*.css")
+        .pipe(sprite({
+            baseUrl:         "./src/image",
+            spriteSheetName: "sprite.png",
+            spriteSheetPath: "/dist/image"
+        });
+
+    spriteOutput.css.pipe(gulp.dest("./dist/css"));
+    spriteOutput.img.pipe(gulp.dest("./dist/image"));
+});
+*/

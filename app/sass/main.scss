@@ -57,12 +57,14 @@ body {
     top: 31px;
     left: -7px;
     display: inline-block;
-    width: 255px;
+    width: 257px;
     height: 42px;
-    .logo-img{
+    .logo-img {
       width: 100%;
     }
-    .logo-txt{font-size: 0;}
+    .logo-txt {
+      font-size: 0;
+    }
     // bg in sprite
   }
 }
@@ -103,8 +105,12 @@ body {
   position: relative;
   .lock {
     position: relative;
-    left: 30px;
-    top: 10px;
+    left: 32px;
+    top: 12px;
+    background: url('../img/lock.png') center center no-repeat;
+    width: 20px;
+    height: 32px;
+    display: inline-block;
   }
   .copyright {
     font: 13px 'fira_sanslight';
@@ -264,7 +270,7 @@ body {
   font: 17px 'fira_sanslight';
   padding: 0 20px;
 
-  &.inp-field-error{
+  &.inp-field-error {
     border-color: rgb(249, 126, 118);
     background-color: rgba(249, 126, 118, 0.329);
   }
@@ -282,17 +288,18 @@ body {
   background-color: rgb(72, 203, 232);
   position: relative;
   border-bottom: 2px solid rgb(59, 168, 192);
-  &:active{
+  &:active {
     outline: none;
     border-bottom: none;
     border-top: 2px solid rgb(59, 168, 192);
 
   }
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
 
-
-.inp-field::placeholder{color: #48cbe8;}
+.inp-field::placeholder {
+  color: #48cbe8;
+}
 
