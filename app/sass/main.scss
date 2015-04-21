@@ -54,9 +54,15 @@ body {
   position: relative;
   .logo {
     position: absolute;
-    top: 39px;
-    left: 0;
+    top: 31px;
+    left: -7px;
     display: inline-block;
+    width: 255px;
+    height: 42px;
+    .logo-img{
+      width: 100%;
+    }
+    .logo-txt{font-size: 0;}
     // bg in sprite
   }
 }
@@ -75,11 +81,11 @@ body {
   height: 47px;
 }
 
-.social-links li {
+.social-links .social-links-item {
   margin-left: 24px;
 }
 
-.social-links li:first-child {
+.social-links .social-links-item:first-child {
   margin-left: 0;
 }
 
@@ -132,14 +138,14 @@ body {
 
   border-bottom: 2px solid #3ba8c0;
   margin: 0 10px !important;
-  a {
+  .left-col-menu-item-link {
     display: block;
     text-decoration: none;
     color: #959aa8;
     padding: 18px 0 20px 28px;
     margin: 0 -10px;
   }
-  a:hover {
+  .left-col-menu-item-link:hover {
     /*font: 21px 'fira_sansbook';*/
     color: #3ba8c0;
   }
@@ -155,12 +161,12 @@ body {
   border-bottom: none;
   font: 23px 'fira_sansbook';
   margin: -2px 0 0 0 !important;
-  a {
+  .left-col-menu-item-link {
     padding: 22px 0 18px 28px;
     margin: 0;
     color: white;
   }
-  a:hover {
+  .left-col-menu-item-link:hover {
     color: white;
   }
 }
@@ -186,33 +192,33 @@ body {
     @include clear_list(block);
   }
   .contacts-item {
-    a {
+    .contacts-item-link {
       display: block;
       padding: 10px 0 10px 82px;
       text-decoration: none;
       color: white;
     }
-    a:hover {
+    .contacts-item-link:hover {
       text-decoration: underline;
     }
 
   }
   .mail {
     background-color: $left_contacts_mail;
-    a {
+    .contacts-item-link {
       background: url('../img/ico-mail.png') 42px center no-repeat
     }
 
   }
   .phone {
     background-color: $left_contacts_phone;
-    a {
+    .contacts-item-link {
       background: url('../img/ico-phone.png') 42px center no-repeat
     }
   }
   .skype {
     background-color: $left_contacts_skype;
-    a {
+    .contacts-item-link {
       background: url('../img/ico-skype.png') 42px center no-repeat
     }
   }
@@ -288,5 +294,5 @@ body {
 }
 
 
-input::placeholder{color: #48cbe8;}
+.inp-field::placeholder{color: #48cbe8;}
 
