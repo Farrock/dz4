@@ -45,3 +45,12 @@ body{margin:0;padding:0;background:url(../img/bg.png)repeat;height:100%}
 .content-block:last-child{margin-bottom:40px}
 .content-block-header{font:27px fira_sansbook;color:#3ba8c0;padding:12px 22px 12px 22px;display:inline-block;border-bottom:2px solid #3ba8c0;margin-bottom:21px}
 .content-block-header-text{font:17px fira_sansmedium;color:#5a636b}
+.inp-field{border:1px solid #48cbe8;border-radius:4px;height:60px;color:#48cbe8;font:17px fira_sanslight;padding:0 20px}
+.inp-field.inp-field-error{border-color:#f97e76;background-color:rgba(249,126,118,.329)}
+.btn{display:inline-block;padding:0 20px;height:55px;font:36px fira_sansbook;color:#fff;border:none;border-radius:8px;background-color:#48cbe8;position:relative;border-bottom:2px solid #3ba8c0}
+.btn:active{outline:0;border-bottom:none;border-top:2px solid #3ba8c0}
+.btn:focus{outline:0}
+input::-webkit-input-placeholder{color:#48cbe8}
+input::-moz-placeholder{color:#48cbe8}
+input:-ms-input-placeholder{color:#48cbe8}
+input::placeholder{color:#48cbe8}

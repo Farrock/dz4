@@ -139,7 +139,7 @@ body {
     padding: 18px 0 20px 28px;
     margin: 0 -10px;
   }
-  a:hover{
+  a:hover {
     /*font: 21px 'fira_sansbook';*/
     color: #3ba8c0;
   }
@@ -224,14 +224,16 @@ body {
   width: 650px;
 }
 
-
 .content-block {
   border-radius: 4px;
   background-color: $header_footer_bg_color;
   padding-bottom: 20px;
   margin-bottom: 24px;
 }
-.content-block:last-child {margin-bottom:40px}
+
+.content-block:last-child {
+  margin-bottom: 40px
+}
 
 .content-block-header {
   font: 27px 'fira_sansbook';
@@ -244,7 +246,47 @@ body {
 }
 
 .content-block-header-text {
-  font: 17px 'fira_sansmedium' ;
+  font: 17px 'fira_sansmedium';
   color: #5a636b;
 }
+
+.inp-field {
+  border: 1px solid rgb(72, 203, 232);
+  border-radius: 4px;
+  height: 60px;
+  color: #48cbe8;
+  font: 17px 'fira_sanslight';
+  padding: 0 20px;
+
+  &.inp-field-error{
+    border-color: rgb(249, 126, 118);
+    background-color: rgba(249, 126, 118, 0.329);
+  }
+
+}
+
+.btn {
+  display: inline-block;
+  padding: 0px 20px;
+  height: 55px;
+  font: 36px 'fira_sansbook';
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(72, 203, 232);
+  position: relative;
+  border-bottom: 2px solid rgb(59, 168, 192);
+  &:active{
+    outline: none;
+    border-bottom: none;
+    border-top: 2px solid rgb(59, 168, 192);
+
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+
+input::placeholder{color: #48cbe8;}
 

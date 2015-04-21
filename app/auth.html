@@ -32,26 +32,29 @@
 
 
 		<div class="auth-page">
-			<!--<div class="auth-page-header">Авторизуйтесь</div>-->
-			<!--<div class="auth-page-fields">-->
-				<!--<div class="field">-->
-					<!--<div class="field-title">Логин</div>-->
-					<!--<div class="field-input">-->
-						<!--<input class="inp-field" type="text" name="login"/>-->
-						<!--&lt;!&ndash;<span class="error-msg">Введите логин</span>&ndash;&gt;-->
-					<!--</div>-->
-				<!--</div>-->
-				<!--<div class="field">-->
-					<!--<div class="field-title">Пароль</div>-->
-					<!--<div class="field-input">-->
-						<!--<input class="inp-field" type="password" name="password"/>-->
-						<!--&lt;!&ndash;<span class="error-msg">Введите пароль</span>&ndash;&gt;-->
-					<!--</div>-->
-				<!--</div>-->
-			<!--</div>-->
+			<div class="auth-page-header">Авторизуйтесь</div>
+			<div class="auth-page-fields">
+				<div class="field">
+					<div class="field-title">Логин</div>
+					<div class="field-input-wp">
+						<input class="inp-field dinp-field-error" placeholder="Введите логин" type="text" name="login"/>
+						<span class="error-msg error-login">Введите логин</span>
+					</div>
+				</div>
+				<div class="field">
+					<div class="field-title">Пароль</div>
+					<div class="field-input-wp">
+						<input class="inp-field inp-field-error" placeholder="Введите пароль" type="password" name="password"/>
+						<span class="error-msg error-pass">Введите пароль</span>
+					</div>
+				</div>
+
+				<div class="field">
+					<input class="btn btn-submit" type="submit" value="Войти"/>
+				</div>
+
+			</div>
 		</div>
-
-
 	</div>
 
 </div>
