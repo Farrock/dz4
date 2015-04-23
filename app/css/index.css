@@ -1,7 +1,7 @@
 .user-common-info .user-photo-wp{float:left;margin:22px 24px 0 55px}
 .user-common-info .user-photo{width:142px;height:142px;border-radius:50% 50%;overflow:hidden;border:4px solid #3ba8c0;background-color:#fff}
 .user-common-info .user-photo img{position:relative;top:27px;width:100%}
-.user-common-info .user-data{margin:0;padding:0;list-style-type:none}
+.user-common-info .user-data{margin:0;padding:0;list-style-type:none;padding-left:229px}
 .user-common-info .user-data li{margin:0;padding:0;list-style-type:none;display:block}
 .user-common-info .user-data li{margin-bottom:6px}
 .user-common-info .user-data .key{font:17px fira_sansmedium;padding-right:18px;color:#5a636b;display:table-cell;vertical-align:top}

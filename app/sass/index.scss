@@ -22,7 +22,7 @@
 
   .user-data {
     @include clear_list(block);
-
+    padding-left: 229px;
     li {
       margin-bottom: 6px;
     }

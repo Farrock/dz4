@@ -3,7 +3,7 @@
 <head lang="ru">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="UTF-8">
-	<title>Мои работы</title>
+	<title>Связаться со мной</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
 
 
@@ -18,7 +18,7 @@
 
 	<link rel="stylesheet" href="css/sprite.css"/>
 	<link rel="stylesheet" href="css/main.css"/>
-	<link rel="stylesheet" href="css/myworks.css"/>
+	<link rel="stylesheet" href="css/contacts.css"/>
 
 	<!-- bower:js -->
 	<script src="bower/jquery/dist/jquery.js"></script>
@@ -31,7 +31,7 @@
 		<header class="header">
 			<div class="header-in">
 				<a href="/" class="logo">
-					<img class="logo-img" src="../img/logo.png" alt=""/>
+					<img class="logo-img" src="../img/logo.png" alt="лого"/>
 					<span class="logo-txt"> Сайт портфолио - лого</span>
 				</a>
 				<ul class="social-links">
@@ -43,13 +43,12 @@
 			</div>
 		</header>
 
-
 		<div class="container main-container">
 			<div class="left-col">
 				<ul class="left-col-menu">
 					<li class="left-col-menu-item "><a class="left-col-menu-item-link" href="index.html">Обо мне</a></li>
-					<li class="left-col-menu-item active"><a class="left-col-menu-item-link" href="myworks.html">Мои работы</a></li>
-					<li class="left-col-menu-item "><a class="left-col-menu-item-link" href="contacts.html">Связаться со смной</a></li>
+					<li class="left-col-menu-item "><a class="left-col-menu-item-link" href="myworks.html">Мои работы</a></li>
+					<li class="left-col-menu-item active"><a class="left-col-menu-item-link" href="contacts.html">Связаться со смной</a></li>
 				</ul>
 
 				<div class="contacts-wp">
@@ -64,40 +63,39 @@
 
 			<div class="right-col">
 				<div class="content">
-					<div class="content-block">
-						<div class="content-block-header">Мои работы</div>
-						<div class="content-block-text">
-							<div class="myworks-list clearfix">
-								<div class="myworks-item ">
-									<div class="myworks-item-img"><img src="../img/site1.jpg" alt=""/></div>
-									<div class="myworks-item-name"><a href="#">www.site.ru</a></div>
-									<div class="myworks-item-descr">Информация о проекте 1 превью 2 строки</div>
-									<a href="#" class="overlay"><div class="title">Название</div></a>
-								</div>
-								<div class="myworks-item">
-									<div class="myworks-item-img"><img src="../img/site2.jpg" alt=""/></div>
-									<div class="myworks-item-name"><a href="#">www.site.ru</a></div>
-									<div class="myworks-item-descr">Информация о проекте 1 превью 2 строки</div>
-									<a href="#" class="overlay"><div class="title">Название</div></a>
-								</div>
-								<div class="myworks-item">
-									<div class="myworks-item-img"><img src="../img/site3.jpg" alt=""/></div>
-									<div class="myworks-item-name"><a href="#">www.site.ru</a></div>
-									<div class="myworks-item-descr">Информация о проекте 1 превью 2 строки</div>
-									<a href="#" class="overlay"><div class="title">Название</div></a>
-								</div>
-								<div class="myworks-item">
-									<div class="myworks-item-img"><img src="../img/site4.jpg" alt=""/></div>
-									<div class="myworks-item-name"><a href="#">www.site.ru</a></div>
-									<div class="myworks-item-descr">Информация о проекте 1 превью 2 строки</div>
-									<a href="#" class="overlay"><div class="title">Название</div></a>
-								</div>
-								<div class="myworks-item add-project">
-									<div class="myworks-item-img">
-										<span>Добавить проект</span>
+					<div class="contacts-block">
+						<div class="contacts-block-header">У вас интересный проект? Напишите мне</div>
+						<div class="contacts-block-in">
+							<form class="contacts-form" action="" method="post">
+								<div class="form-row">
+									<div class="form-row-name-wp">
+										<label class="form-label" for="name">Имя</label>
+										<input type="text" id="name" name="name" placeholder="Как к вам обращаться"/>
+									</div>
+									<div class="form-row-email-wp">
+										<label class="form-label" for="email">Email</label>
+										<input type="text" id="email" name="email" placeholder="Куда мне писать"/>
 									</div>
 								</div>
-							</div>
+								<div class="form-row">
+									<label class="form-label" for="message">Сообщение</label>
+									<textarea name="message" id="message" placeholder="Кратко в чем суть"></textarea>
+								</div>
+								<div class="form-row">
+									<label class="form-label" for="captcha">Введите код, указанный на картинке</label>
+									<div class="form-captch-wp">
+										<img src="../img/captcha.jpg" alt="Защитный код"/>
+									</div>
+
+									<div class="form-captch-input-wp">
+										<input type="text" id="captcha" name="captcha" placeholder="Введите код"/>
+									</div>
+								</div>
+								<div class="form-row">
+									<input class="" type="submit" value="Отправить"/>
+									<input class="" type="reset" value="Очистить"/>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
