@@ -63,37 +63,37 @@
 
 			<div class="right-col">
 				<div class="content">
-					<div class="contacts-block">
+					<div class="contacts-block content-block">
 						<div class="contacts-block-header">У вас интересный проект? Напишите мне</div>
 						<div class="contacts-block-in">
 							<form class="contacts-form" action="" method="post">
-								<div class="form-row">
-									<div class="form-row-name-wp">
+								<div class="form-row clearfix">
+									<div class="form-col">
 										<label class="form-label" for="name">Имя</label>
-										<input type="text" id="name" name="name" placeholder="Как к вам обращаться"/>
+										<input type="text" class="inp-field" id="name" name="name" placeholder="Как к вам обращаться"/>
 									</div>
-									<div class="form-row-email-wp">
+									<div class="form-col">
 										<label class="form-label" for="email">Email</label>
-										<input type="text" id="email" name="email" placeholder="Куда мне писать"/>
+										<input type="text" class="inp-field" id="email" name="email" placeholder="Куда мне писать"/>
 									</div>
 								</div>
-								<div class="form-row">
+								<div class="form-row form-row-message">
 									<label class="form-label" for="message">Сообщение</label>
-									<textarea name="message" id="message" placeholder="Кратко в чем суть"></textarea>
+									<textarea name="message" class="form-message inp-field" id="message" placeholder="Кратко в чем суть"></textarea>
 								</div>
-								<div class="form-row">
+								<div class="form-row clearfix">
 									<label class="form-label" for="captcha">Введите код, указанный на картинке</label>
-									<div class="form-captch-wp">
+									<div class="form-col captcha-wp">
 										<img src="../img/captcha.jpg" alt="Защитный код"/>
 									</div>
 
-									<div class="form-captch-input-wp">
-										<input type="text" id="captcha" name="captcha" placeholder="Введите код"/>
+									<div class="form-col captcha-wp-input-wp">
+										<input type="text" class="inp-field inp-field-captcha" id="captcha" name="captcha" placeholder="Введите код"/>
 									</div>
 								</div>
-								<div class="form-row">
-									<input class="" type="submit" value="Отправить"/>
-									<input class="" type="reset" value="Очистить"/>
+								<div class="form-row form-btns ">
+									<input class="btn" type="submit" value="Отправить"/>
+									<input class="btn" type="reset" value="Очистить"/>
 								</div>
 							</form>
 						</div>
