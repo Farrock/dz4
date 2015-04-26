@@ -282,8 +282,8 @@ body {
   border-bottom: 2px solid rgb(59, 168, 192);
   &:active {
     outline: none;
-    border-bottom: none;
     border-top: 2px solid rgb(59, 168, 192);
+    border-bottom: 2px solid #48cbe8;
 
   }
   &:focus {
@@ -295,3 +295,5 @@ body {
   color: #48cbe8;
 }
 
+.inp-field:active{outline: none;}
+.inp-field:focus{outline: none;}

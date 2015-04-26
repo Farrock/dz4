@@ -1,0 +1,20 @@
+.contacts-block .contacts-block-header{background-color:#48cbe8;font:27px fira_sansbook;text-align:center;color:#fff;padding:40px 0 55px 0;position:relative;margin-bottom:40px}
+.contacts-block .contacts-block-header:after{content:' ';display:block;background-color:#67dffa;z-index:10;width:100%;height:15px;position:absolute;bottom:0}
+.contacts-block .contacts-form{width:400px;margin:auto}
+.contacts-block .contacts-form .form-row{margin-bottom:13px}
+.contacts-block .contacts-form .form-row.form-row-message{margin-bottom:8px}
+.contacts-block .contacts-form .form-row.form-btns{height:60px;vert-align:center}
+.contacts-block .contacts-form .form-label{font:19px fira_sanslight;color:#959aa8;display:block}
+.contacts-block .contacts-form .form-label[for=captcha]{font-size:17px}
+.contacts-block .contacts-form .inp-field{height:38px;font:13px fira_sanslight;padding:0 10px;width:170px}
+.contacts-block .contacts-form .inp-field.form-message{width:380px;height:180px}
+.contacts-block .contacts-form .inp-field.inp-field-captcha{height:34px}
+.contacts-block .contacts-form .form-col{float:left;width:190px}
+.contacts-block .contacts-form .form-col:first-child{margin-right:20px}
+.contacts-block .contacts-form .form-col.captcha-wp{margin-right:20px;margin-bottom:10px}
+.contacts-block .contacts-form .form-col.captcha-wp-input-wp{padding-top:16px}
+.contacts-block .contacts-form .btn{border-top:2px solid #48cbe8;font:19px fira_sansbook;padding:0 22px;height:35px;border-radius:4px}
+.contacts-block .contacts-form .btn[type=submit]{margin-right:120px}
+.contacts-block .contacts-form .btn[type=submit]:active{border-top:2px solid #3ba8c0}
+.contacts-block .contacts-form .btn[type=reset]{padding:0 27px;background-color:#849db5;border-top:2px solid #849db5;border-bottom:2px solid #687b8f}
+.contacts-block .contacts-form .btn[type=reset]:active{outline:0;border-top:2px solid #687b8f;border-bottom:2px solid #849db5}
