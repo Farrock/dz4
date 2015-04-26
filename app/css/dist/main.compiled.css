@@ -37,35 +37,17 @@
     background-position: -176px -62px
 }
 
-/*
-.separator, .logo, .site-new, .profile-boy-ph, .profile-girl-ph,
-.ico-fb:hover, .ico-fb, .ico-gh:hover, .ico-gh, .ico-tw:hover,
-.ico-tw, .ico-vk:hover, .ico-vk, .ico-hat, .ico-bag,
-.ico-course, .ico-mail, .ico-skype, .lock, .ico-phone,
-.ico-cross-green, .ico-cross-red
-{ display: inline-block; background: url('../img/sprite.png') no-repeat; overflow: hidden; text-align: left; }
 
-.separator { background-position: -0px -0px; width: 1400px; height: 3px; }
-.logo { background-position: -0px -3px; width: 243px; height: 42px; }
-.site-new { background-position: -243px -3px; width: 182px; height: 129px; }
-.profile-boy-ph { background-position: -425px -3px; width: 150px; height: 150px; }
-.profile-girl-ph { background-position: -575px -3px; width: 148px; height: 149px; }
-.ico-fb:hover { background-position: -723px -3px; width: 47px; height: 47px; }
-.ico-fb { background-position: -770px -3px; width: 47px; height: 47px; }
-.ico-gh:hover { background-position: -817px -3px; width: 47px; height: 47px; }
-.ico-gh { background-position: -864px -3px; width: 47px; height: 47px; }
-.ico-tw:hover { background-position: -911px -3px; width: 47px; height: 47px; }
-.ico-tw { background-position: -958px -3px; width: 47px; height: 47px; }
-.ico-vk:hover { background-position: -1005px -3px; width: 47px; height: 47px; }
-.ico-vk { background-position: -1052px -3px; width: 47px; height: 47px; }
-.ico-hat { background-position: -1099px -3px; width: 41px; height: 23px; }
-.ico-bag { background-position: -1140px -3px; width: 36px; height: 34px; }
-.ico-course { background-position: -1176px -3px; width: 26px; height: 32px; }
-.ico-mail { background-position: -1202px -3px; width: 21px; height: 16px; }
-.ico-skype { background-position: -1223px -3px; width: 20px; height: 20px; }
-.lock { background-position: -1243px -3px; width: 20px; height: 32px; }
-.ico-phone { background-position: -1263px -3px; width: 19px; height: 21px; }
-.ico-cross-green { background-position: -1282px -3px; width: 11px; height: 11px; }
-.ico-cross-red { background-position: -1293px -3px; width: 11px; height: 11px; }
+.lock {
+    position: relative;
+    left: 32px;
+    top: 12px;
+    background: url('../img/lock.png') no-repeat 0 0;
+    width: 20px;
+    height: 32px;
+    display: inline-block;
+}
 
-*/
+.lock:hover {
+    background-position: -20px 0;
+}

@@ -8,7 +8,7 @@ var connect         = require('gulp-connect');
 var opn             = require('opn');
 var wiredep         = require('wiredep').stream;
 var sass            = require('gulp-sass');
-var sprite          = require('gulp-sprite-generator');
+//var sprite          = require('gulp-sprite-generator');
 
 gulp.task('default', ['connect', 'html', 'css', 'watch']);
 
