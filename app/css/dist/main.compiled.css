@@ -39,13 +39,15 @@
 
 
 .lock {
+    cursor: pointer;
+    text-indent: -99999em;
     position: relative;
     left: 32px;
     top: 12px;
-    background: url('../img/lock.png') no-repeat 0 0;
     width: 20px;
     height: 32px;
     display: inline-block;
+    background: url('../img/lock.png') 0 0 no-repeat;
 }
 
 .lock:hover {

@@ -34,7 +34,8 @@
     color: #4a545d;
     text-align: center;
   }
-  &.add-project{
+  &.add-project {
+    text-decoration: none;
     .myworks-item-img {
       border-style: dashed;
       border-width: 1px;
@@ -43,7 +44,9 @@
       background: url('../img/new-site-ico.png') center 33px no-repeat rgba(236, 251, 255, 0.639);
       font: 13px 'fira_sanslight';
       color: #3ba8c0;
-      &:hover{cursor: pointer;}
+      &:hover {
+        cursor: pointer;
+      }
       span {
         position: relative;
         left: 40px;
@@ -86,4 +89,157 @@
 
 .myworks-item:nth-child(3n+3) {
   margin-right: 0;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .5;
+  filter: alpha(opacity=50);
+
+}
+
+
+.add-project-wp {
+  background-color: $header_footer_bg_color;
+  width: 362px;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .inp-field {
+    height: 38px;
+    font: 13px 'fira_sanslight';
+    padding: 0 10px;
+    width: 298px;
+    margin-left: 2px;
+    margin-bottom: 8px;
+    &.form-message {
+      width: 380px;
+      height: 180px;
+    }
+    &.inp-field-captcha {
+      height: 34px;
+    }
+  }
+
+  .inp-field-textarea {
+    padding: 10px 12px 10px 8px;
+    height: 90px;
+  }
+
+  .btn {
+    border-top: 2px solid #48cbe8;
+    font: 19px 'fira_sansbook';
+    padding: 0px 22px;
+    height: 35px;
+    border-radius: 4px;
+  }
+
+  .btn[type=submit] {
+    margin-right: 120px;
+    &:active {
+      border-top: 2px solid rgb(59, 168, 192);
+    }
+  }
+
+  .add-project-btn {
+    margin-left: 90px;
+    padding: 0 30px;
+  }
+
+}
+
+.add-project-header {
+  position: relative;
+  background-color: rgb(72, 203, 232);
+  padding: 7px 0;
+  text-indent: 10px;
+  font: 25px 'fira_sansregular';
+  color: white;
+  position: relative;
+  margin-bottom: 7px;
+  &:after {
+    content: ' ';
+    display: block;
+    background-color: rgb(103, 223, 250);
+    z-index: 10;
+    width: 100%;
+    height: 9px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.add-project-close {
+  text-indent: -99999em;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background: url('../img/close.png') no-repeat center;
+  position: absolute;
+  top: 10px;
+  right: 12px;
+}
+
+.add-project-form {
+  padding: 0px 18px 22px 18px;
+}
+
+.add-project-form-label {
+  display: block;
+  font: 17px 'fira_sansbook';
+  color: #959aa8;
+}
+
+.file {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.file .input-file {
+  width: 252px;
+  margin-right: -10px;
+  display: inline-block;
+}
+
+.file .input-file span {
+  padding-top: 10px;
+  display: block;
+  color: #48cbe8;
+  line-height: 17px;
+}
+
+.file input {
+  color: #48cbe8;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.btn-file {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+  background: url('../img/upload-btn.png') center center no-repeat #48cbe8;
+  display: inline-block;
+  text-indent: -9999em;
+  width: 53px;
+  height: 41px;
+  border-radius: 0 4px 4px 0;
+}
+
+.input-file {
+  width: 100%;
+  font-weight: 300;
+  color: #48cbe8;
+  background-color: white;
 }
