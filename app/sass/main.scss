@@ -70,7 +70,7 @@ body {
 }
 
 .social-links {
-  @include clear_list(inline-block);
+  @include clear_list(inline-block, ".social-links-item");
   position: absolute;
   top: 36px;
   right: 0;
@@ -124,7 +124,7 @@ body {
 
 .left-col-menu {
   @include clear_mp;
-  @include clear_list(block);
+  @include clear_list(block, ".left-col-menu-item");
   background-color: $left_menu_item_bg;
   overflow: hidden;
   border-radius: 4px;
@@ -187,7 +187,7 @@ body {
     background-color: $left_contacts_h_color;
   }
   .contacts {
-    @include clear_list(block);
+    @include clear_list(block, ".contacts-item");
   }
   .contacts-item {
     .contacts-item-link {
