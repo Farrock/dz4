@@ -57,3 +57,4 @@ body{margin:0;padding:0;background:url(../img/bg.png)repeat;height:100%}
 .inp-field::placeholder{color:#48cbe8}
 .inp-field:active{outline:0}
 .inp-field:focus{outline:0}
+.qtip-rounded.qtip-style{border-radius:4px;border-color:#f97e76;background-color:#f97e76;border-color:#f97e76;font-family:fira_sansbook;color:#fff;font-size:13px}

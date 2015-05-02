@@ -26,9 +26,15 @@
 	<script src="js/main.js"></script>
 	<script src="js/add-project.js"></script>
 
+	<!--fancybox-->
 	<script type="text/javascript" src="bower/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
 	<link rel="stylesheet" type="text/css" href="bower/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
+	<!--qtip-->
+	<script type="text/javascript" src="bower/qtip2/jquery.qtip.min.js"></script>
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css"/>
+
+	<script type="text/javascript" src="js/validate.js"></script>
 
 </head>
 <body>
@@ -112,32 +118,54 @@
 
 	<footer class="footer">
 		<div class="footer-in">
-			<span class="lock">Войти</span><span class="copyright"> © 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
+			<a href="auth.html" class="lock">Войти</a><span class="copyright"> © 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
 		</div>
 	</footer>
 
 <div class="add-project-wp" id="add-project" style="display: none;">
 	<div class="add-project-header">Добавление проекта <div class="add-project-close">Закрыть</div></div>
 
-	<form class="add-project-form" action="">
+	<form class="add-project-form" id="add-project-form" action="">
+
+		<div class="fail-mes js-popup">
+			<div class="fail-mes-close js-popup-close"></div>
+			<div class="fail-mes-title">Ошибка!</div>
+			<div class="fail-mes-content">Невозможно добавить проект.</div>
+		</div>
+
 		<label class="add-project-form-label" for="project-name">Название проекта</label>
-		<input type="text" class="inp-field" name="project-name" id="project-name" placeholder="Введите название"/>
+		<input type="text" class="inp-field" name="project-name" id="project-name" placeholder="Введите название" qtip-content="Не указано название"/>
 
 		<label class="add-project-form-label" for="project-image">Картинка проекта</label>
 		<div class="file">
-			<input type="file" />
+			<input type="file" qtip-content="Не указано изображение (jpeg jpg png gif)" data-file-type="img" />
 			<div class="input-file inp-field"><span>Загрузите изображение</span></div>
 			<div class="btn-file">Обзор...</div>
 		</div>
 
 		<label class="add-project-form-label" for="project-url">URL проекта</label>
-		<input type="text" class="inp-field" name="project-url" id="project-url" placeholder="Добавте ссылку"/>
+		<input type="text" class="inp-field" name="project-url" id="project-url" placeholder="Добавте ссылку" qtip-content="Не указан URL проекта" />
 
 		<label class="add-project-form-label" for="project-description">Описание</label>
-		<textarea name="project-description" class="inp-field inp-field-textarea" id="project-description" cols="30" rows="10" placeholder="Пара слов о вашем проекте"></textarea>
+		<textarea name="project-description" class="inp-field inp-field-textarea" id="project-description" cols="30" rows="10" placeholder="Пара слов о вашем проекте" qtip-content="Не указано описание"></textarea>
 
 		<input type="submit" name="project-add" class="btn add-project-btn" value="Добавить"/>
+
+		<div class="success-mes js-popup">
+			<div class="success-mes-in">
+				<div class="success-mes-close js-popup-close"></div>
+				<div class="success-mes-title">Ура!</div>
+				<div class="success-mes-content">Проект успешно добавлен.</div>
+			</div>
+		</div>
+
 	</form>
+
+
+
+
+
+
 </div>
 
 </body>

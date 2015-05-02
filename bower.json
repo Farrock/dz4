@@ -3,6 +3,7 @@
   "dependencies": {
     "jquery": "1.11",
     "normalize.css": "~3.0.3",
-    "fancybox": "~2.1.5"
+    "fancybox": "~2.1.5",
+    "qtip2": "~2.2.1"
   }
 }

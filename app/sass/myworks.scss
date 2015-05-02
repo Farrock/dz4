@@ -103,7 +103,6 @@
 
 }
 
-
 .add-project-wp {
   background-color: $header_footer_bg_color;
   width: 362px;
@@ -243,3 +242,77 @@
   color: #48cbe8;
   background-color: white;
 }
+
+.success-mes {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 200px;
+
+  padding: 21px;
+  border-radius: 4px;
+
+  background-color: rgb(239, 243, 247);
+  box-shadow: 0px 6px 13px 4px rgb(13, 16, 7);
+  width: 320px;
+
+  .success-mes-in {
+    padding: 0px 10px;
+    font-family: "fira_sansbook";
+    color: #49BB7B;
+
+    border: 1px solid #49bb7b;
+    border-radius: 4px;
+    background-color: #b8e1ce;
+
+    position: relative;
+
+    .success-mes-close {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 11px;
+      height: 11px;
+      background: url(../img/close-green.png) no-repeat center;
+      cursor: pointer;
+    }
+    .success-mes-title {
+      font-size: 25px;
+    }
+    .success-mes-content {
+      font-size: 15px;
+    }
+  }
+}
+
+.fail-mes {
+
+  display: none;
+  position: relative;;
+  border-radius: 4px;
+  color: #f97e76;
+
+  border: 1px solid #f97e76;
+  background-color: #f2cccd;
+
+  padding: 0px 10px;
+  font-family: "fira_sansbook";
+  margin-bottom: 7px;
+
+  .fail-mes-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 11px;
+    height: 11px;
+    background: url(../img/close-red.png) no-repeat center;
+    cursor: pointer;
+  }
+  .fail-mes-title {
+    font-size: 25px;
+  }
+  .fail-mes-content {
+    font-size: 15px;
+  }
+}
+

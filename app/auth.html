@@ -8,7 +8,7 @@
 
 
 	<!-- bower:css -->
-	<link rel="stylesheet" href="bower/normalize.css/normalize.css"/>
+	<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
 	<!-- endbower -->
 
 	<!-- fonts -->
@@ -25,6 +25,14 @@
 	<!-- endbower -->
 	<script src="js/main.js"></script>
 
+	<!--qtip-->
+	<script type="text/javascript" src="bower/qtip2/jquery.qtip.min.js"></script>
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css"/>
+
+	<script type="text/javascript" src="js/validate.js"></script>
+	<script type="text/javascript" src="js/auth.js"></script>
+
+
 </head>
 <body>
 <div class="wrapper auth-wp">
@@ -32,21 +40,19 @@
 	<div class="auth-page-wp">
 
 
-		<div class="auth-page">
+		<form class="auth-page" id="auth-form">
 			<div class="auth-page-header">Авторизуйтесь</div>
 			<div class="auth-page-fields">
 				<div class="field">
 					<div class="field-title">Логин</div>
 					<div class="field-input-wp">
-						<input class="inp-field dinp-field-error" placeholder="Введите логин" type="text" name="login"/>
-						<span class="error-msg error-login">Введите логин</span>
+						<input class="inp-field " placeholder="Введите логин" type="text" name="login" qtip-content="Введите логин"/>
 					</div>
 				</div>
 				<div class="field">
 					<div class="field-title">Пароль</div>
 					<div class="field-input-wp">
-						<input class="inp-field inp-field-error" placeholder="Введите пароль" type="password" name="password"/>
-						<span class="error-msg error-pass">Введите пароль</span>
+						<input class="inp-field" placeholder="Введите пароль" type="password" name="password" qtip-content="Введите пароль"/>
 					</div>
 				</div>
 
@@ -55,13 +61,13 @@
 				</div>
 
 			</div>
-		</div>
+		</form>
 	</div>
 
 </div>
 <footer class="footer">
 	<div class="footer-in">
-		<span class="lock"></span><span class="copyright"> © 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
+		<a href="auth.html" class="lock"></a><span class="copyright"> © 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
 	</div>
 </footer>
 
