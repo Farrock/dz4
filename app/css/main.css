@@ -3,8 +3,8 @@
 .clearfix:after,.clearfix:before,.container:after,.container:before{content:" ";display:table}
 .clearfix:after,.container:after{clear:both}
 html{height:100%}
-body{margin:0;padding:0;background:url(../img/bg.png)repeat;height:100%}
-.header{background:url(../img/separator.png)bottom center no-repeat #eff3f7;margin-bottom:39px}
+body{margin:0;padding:0;background:url(../img/bg.png) repeat;height:100%}
+.header{background:url(../img/separator.png) bottom center no-repeat #eff3f7;margin-bottom:39px}
 .header-in{max-width:1200px;min-width:960px;margin:auto;height:119px;position:relative}
 .header-in .logo{position:absolute;top:31px;left:-7px;display:inline-block;width:257px;height:42px}
 .header-in .logo .logo-img{width:100%}
@@ -14,7 +14,7 @@ body{margin:0;padding:0;background:url(../img/bg.png)repeat;height:100%}
 .social-links .soc-ico{width:47px;height:47px}
 .social-links .social-links-item{margin-left:24px}
 .social-links .social-links-item:first-child{margin-left:0}
-.footer{background:url(../img/separator.png)top center no-repeat #eff3f7;height:80px;margin-top:-80px}
+.footer{background:url(../img/separator.png) top center no-repeat #eff3f7;height:80px;margin-top:-80px}
 .footer-in{width:960px;margin:auto;padding-top:12px;position:relative}
 .footer-in .copyright{font:13px fira_sanslight;position:relative;left:260px}
 .main-container{width:960px;margin:auto}
@@ -36,11 +36,11 @@ body{margin:0;padding:0;background:url(../img/bg.png)repeat;height:100%}
 .left-col .contacts-item .contacts-item-link{display:block;padding:10px 0 10px 82px;text-decoration:none;color:#fff}
 .left-col .contacts-item .contacts-item-link:hover{text-decoration:underline}
 .left-col .mail{background-color:#41b9d4}
-.left-col .mail .contacts-item-link{background:url(../img/ico-mail.png)42px center no-repeat}
+.left-col .mail .contacts-item-link{background:url(../img/ico-mail.png) 42px center no-repeat}
 .left-col .phone{background-color:#48cbe8}
-.left-col .phone .contacts-item-link{background:url(../img/ico-phone.png)42px center no-repeat}
+.left-col .phone .contacts-item-link{background:url(../img/ico-phone.png) 42px center no-repeat}
 .left-col .skype{background-color:#51daf8}
-.left-col .skype .contacts-item-link{background:url(../img/ico-skype.png)42px center no-repeat}
+.left-col .skype .contacts-item-link{background:url(../img/ico-skype.png) 42px center no-repeat}
 .right-col{float:right;width:650px}
 .content-block{border-radius:4px;background-color:#eff3f7;padding-bottom:20px;margin-bottom:24px}
 .content-block:last-child{margin-bottom:40px}

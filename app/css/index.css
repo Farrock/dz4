@@ -9,18 +9,18 @@
 .user-common-info .user-data .skills-wp{width:224px;padding-bottom:20px}
 .user-common-info .user-data .skills{font-size:0;margin:0;padding:0;list-style-type:none}
 .user-common-info .user-data .skills li{margin:0;padding:0;list-style-type:none;display:inline-block}
-.user-common-info .user-data .skills li{font:14px proxima_nova_condensed_semibold;color:#fff;padding:2px 14px;display:inline-block;margin:8px 8px 0 0;border-radius:2px;background-image:-webkit-linear-gradient(90deg,#2e8ca2 0,#2e8ca2 52%,#3ba8c0 53%,#3ba8c0 100%);background-image:-ms-linear-gradient(90deg,#2e8ca2 0,#2e8ca2 52%,#3ba8c0 53%,#3ba8c0 100%)}
+.user-common-info .user-data .skills li{font:14px proxima_nova_condensed_semibold;color:#fff;padding:2px 14px;display:inline-block;margin:8px 8px 0 0;border-radius:2px;background-color:#2e8ca2;background-image:-webkit-linear-gradient(90deg,#2e8ca2 0,#2e8ca2 52%,#3ba8c0 53%,#3ba8c0 100%);background-image:-ms-linear-gradient(90deg,#2e8ca2 0,#2e8ca2 52%,#3ba8c0 53%,#3ba8c0 100%)}
 .content-block-text .works-info{padding-top:4px;padding-left:58px}
 .content-block-text .works{margin:0;padding:0;list-style-type:none;color:#4a545d}
 .content-block-text .works li{margin:0;padding:0;list-style-type:none;display:list-item}
-.content-block-text .works li{min-height:34px;padding-left:66px;margin-bottom:18px;background:url(../img/ico-bag.png)left top no-repeat}
+.content-block-text .works li{min-height:34px;padding-left:66px;margin-bottom:18px;background:url(../img/ico-bag.png) left top no-repeat}
 .content-block-text .works .where{font:17px fira_sansbook;line-height:18px}
 .content-block-text .works .period{font:15px fira_sanslight}
 .content-block-text .learn-info{padding-left:56px}
 .content-block-text .learn{margin:0;padding:0;list-style-type:none;color:#4a545d}
 .content-block-text .learn li{margin:0;padding:0;list-style-type:none;display:list-item}
 .content-block-text .learn li{min-height:34px;padding-left:68px;margin-bottom:15px}
-.content-block-text .learn .hat{background:url(../img/ico-hat.png)0 10px no-repeat}
-.content-block-text .learn .course{background:url(../img/ico-course.png)6px 2px no-repeat}
+.content-block-text .learn .hat{background:url(../img/ico-hat.png) 0 10px no-repeat}
+.content-block-text .learn .course{background:url(../img/ico-course.png) 6px 2px no-repeat}
 .content-block-text .learn .where{font:17px fira_sansbook;margin-bottom:-4px}
 .content-block-text .learn .period{font:15px fira_sanslight}
