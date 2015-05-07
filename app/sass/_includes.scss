@@ -19,9 +19,9 @@ $min_width: 960px;
   padding: 0;
 }
 
-@mixin clear_list($display-item) {
+@mixin clear_list($display-item, $selector) {
   @include clear_mp();
-  li {
+  #{$selector} {
     @include clear_list_item($display-item);
   }
   list-style-type: none;

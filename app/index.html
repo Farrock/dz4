@@ -26,6 +26,11 @@
 
 	<!-- bower:js -->
 	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/eventEmitter/EventEmitter.js"></script>
+	<script src="bower/eventie/eventie.js"></script>
+	<script src="bower/imagesloaded/imagesloaded.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="bower/qtip2/basic/jquery.qtip.js"></script>
 	<!-- endbower -->
 	<script src="js/main.js"></script>
 
@@ -81,18 +86,18 @@
 								</div>
 							</div>
 							<ul class="user-data">
-								<li><span class="key">Меня зовут:</span><span class="val">Иванов Андрей Степанович</span></li>
-								<li><span class="key">Мой возраст:</span><span class="val">35 лет</span></li>
-								<li><span class="key">Мой город:</span><span class="val">Санкт-Петербург, Россия</span></li>
-								<li><span class="key">Моя специализация:</span><span class="val">FRONTEND разработчик</span></li>
-								<li><span class="key">Ключевые навыки:</span>
+								<li class="user-data-item"><span class="key">Меня зовут:</span><span class="val">Иванов Андрей Степанович</span></li>
+								<li class="user-data-item"><span class="key">Мой возраст:</span><span class="val">35 лет</span></li>
+								<li class="user-data-item"><span class="key">Мой город:</span><span class="val">Санкт-Петербург, Россия</span></li>
+								<li class="user-data-item"><span class="key">Моя специализация:</span><span class="val">FRONTEND разработчик</span></li>
+								<li class="user-data-item"><span class="key">Ключевые навыки:</span>
 									<span class="val skills-wp">
 										<ul class="skills">
-											<li>html</li>
-											<li>css</li>
-											<li>javascript</li>
-											<li>gulp</li>
-											<li>git</li>
+											<li class="skills-item">html</li>
+											<li class="skills-item">css</li>
+											<li class="skills-item">javascript</li>
+											<li class="skills-item">gulp</li>
+											<li class="skills-item">git</li>
 										</ul>
 									</span>
 								</li>
@@ -104,11 +109,11 @@
 						<div class="content-block-text">
 							<div class="works-info">
 								<ul class="works">
-									<li>
+									<li class="works-item">
 										<div class="where">"ИП Боровицкий" - Продавец дисков</div>
 										<div class="period">Сентябрь 2005 - Август 2008</div>
 									</li>
-									<li>
+									<li class="works-item">
 										<div class="where">"ООО Системы безопастности" - Системный администратор</div>
 										<div class="period">Июнь 2008 - Июль 2010</div>
 									</li>
@@ -121,11 +126,11 @@
 						<div class="content-block-text">
 							<div class="learn-info">
 								<ul class="learn">
-									<li class="hat">
+									<li class="learn-item hat">
 										<div class="where">Незаконченное высшее. СПБГУ ИТМО</div>
 										<div class="period">Октябрь 2012 - по настоящее время</div>
 									</li>
-									<li class="course">
+									<li class="learn-item course">
 										<div class="where">Курсы Loftschool.ru</div>
 										<div class="period">Ноябрь 2014 - по настоящее время</div>
 									</li>

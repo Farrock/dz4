@@ -10,7 +10,7 @@ body{margin:0;padding:0;background:url(../img/bg.png) repeat;height:100%}
 .header-in .logo .logo-img{width:100%}
 .header-in .logo .logo-txt{font-size:0}
 .social-links{margin:0;padding:0;list-style-type:none;position:absolute;top:36px;right:0;font-size:0}
-.social-links li{margin:0;padding:0;list-style-type:none;display:inline-block}
+.social-links .social-links-item{margin:0;padding:0;list-style-type:none;display:inline-block}
 .social-links .soc-ico{width:47px;height:47px}
 .social-links .social-links-item{margin-left:24px}
 .social-links .social-links-item:first-child{margin-left:0}
@@ -20,7 +20,7 @@ body{margin:0;padding:0;background:url(../img/bg.png) repeat;height:100%}
 .main-container{width:960px;margin:auto}
 .left-col{float:left;width:250px}
 .left-col-menu{margin:0;padding:0;margin:0;padding:0;list-style-type:none;background-color:#eff3f7;overflow:hidden;border-radius:4px;margin-bottom:24px}
-.left-col-menu li{margin:0;padding:0;list-style-type:none;display:block}
+.left-col-menu .left-col-menu-item{margin:0;padding:0;list-style-type:none;display:block}
 .left-col-menu-item{font:20px fira_sansbook;border-bottom:2px solid #3ba8c0;margin:0 10px!important}
 .left-col-menu-item .left-col-menu-item-link{display:block;text-decoration:none;color:#959aa8;padding:18px 0 20px 28px;margin:0 -10px}
 .left-col-menu-item .left-col-menu-item-link:hover{color:#3ba8c0}
@@ -32,7 +32,7 @@ body{margin:0;padding:0;background:url(../img/bg.png) repeat;height:100%}
 .left-col .contacts-wp{border-radius:4px;overflow:hidden}
 .left-col .contacts-h{color:#fff;font-size:21px;padding:10px 0 10px 20px;background-color:#3ba8c0}
 .left-col .contacts{margin:0;padding:0;list-style-type:none}
-.left-col .contacts li{margin:0;padding:0;list-style-type:none;display:block}
+.left-col .contacts .contacts-item{margin:0;padding:0;list-style-type:none;display:block}
 .left-col .contacts-item .contacts-item-link{display:block;padding:10px 0 10px 82px;text-decoration:none;color:#fff}
 .left-col .contacts-item .contacts-item-link:hover{text-decoration:underline}
 .left-col .mail{background-color:#41b9d4}

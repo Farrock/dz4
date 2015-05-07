@@ -21,9 +21,9 @@
   }
 
   .user-data {
-    @include clear_list(block);
+    @include clear_list(block, ".user-data-item");
     padding-left: 229px;
-    li {
+    .user-data-item {
       margin-bottom: 6px;
     }
     .key {
@@ -48,8 +48,8 @@
 
     .skills {
       font-size: 0;
-      @include clear_list(inline-block);
-      li {
+      @include clear_list(inline-block, ".skills-item");
+      .skills-item {
 
         font: 14px 'proxima_nova_condensed_semibold';
         color: white;
@@ -74,9 +74,9 @@
     padding-left: 58px;
   }
   .works {
-    @include clear_list(list-item);
+    @include clear_list(list-item, ".works-item");
     color: #4a545d;
-    li {
+    .works-item {
       min-height: 34px;
       padding-left: 66px;
       margin-bottom: 18px;
@@ -96,9 +96,9 @@
     padding-left: 56px;
   }
   .learn {
-    @include clear_list(list-item);
+    @include clear_list(list-item, ".learn-item");
     color: #4a545d;
-    li {
+    .learn-item {
       min-height: 34px;
       padding-left: 68px;
       margin-bottom: 15px;
